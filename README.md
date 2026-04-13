@@ -1,4 +1,4 @@
-# Reference FAP – Aviation Federation Portal  
+# Aviation Federation Portal  
 [![Runtime](https://img.shields.io/badge/Runtime-ORCE-blue)](https://github.com/eclipse-xfsc/orchestration-engine)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 [![Version](https://img.shields.io/badge/Version-1.0.0-yellow)](#)
@@ -8,7 +8,7 @@
 
 ## **1. Introduction**
 
-The **Reference FAP (Federation Architecture Pattern)** for **Aviation Federation Portal** provides a complete, production-ready implementation of the onboarding lifecycle inside **Federated Ecosystems** — distributed infrastructures where multiple organizations interconnect, exchange, and validate data and services under a unified trust and compliance framework.
+The **Aviation Federation Portal** provides a complete, production-ready implementation of the onboarding lifecycle inside **Federated Ecosystems** — distributed infrastructures where multiple organizations interconnect, exchange, and validate data and services under a unified trust and compliance framework.
 
 This project is entirely implemented as a **flow-based application** executed on **ORCE (Orchestration Engine)**.  
 ORCE acts solely as the **execution environment**, while the flow itself defines all business logic, configurations, integrations, and validation steps declaratively.
@@ -38,13 +38,13 @@ The communication logic is embedded in the final flow sections (Step 5 – Issue
 
 # **Deployment Guide for Aviation Federation Portal**
 
-A quick and reliable setup guide to deploy and run the Reference FAP flow on ORCE.
+A quick and reliable setup guide to deploy and run the flow on ORCE.
 
 ---
 
 ## Step 0 — Easy Deployment (Single Command)
 
-Before importing or configuring the Reference FAP, you first need to start an ORCE instance.  
+Before importing or configuring, you first need to start an ORCE instance.  
 The following command runs ORCE using the official `ecofacis/xfsc-orce:2.0.12` image:
 
 ```bash
@@ -54,7 +54,7 @@ docker run -d --name orce -p 1880:1880 -p 8080:8080 ecofacis/xfsc-orce:2.0.12
 Port 1880 → ORCE Editor / Deployment Interface
 Port 8080 → ORCE File Browser / uibuilder Source Access
 ```
-Access the ORCE Editor in your browser at `http://localhost:1880` to import and deploy the Reference FAP flow.
+Access the ORCE Editor in your browser at `http://localhost:1880` to import and deploy the flow.
 Use port 8080 to upload your UI source files and static assets after deployment.
 
 Default ORCE Username and Password:
@@ -63,7 +63,7 @@ username: admin
 password: xfsc-orce
 ```
 
-Once the ORCE container is running, you can proceed with Step 1 to import the flows.full.json (Reference FAP flow) and apply your configurations.
+Once the ORCE container is running, you can proceed with Step 1 to import the flows.full.json and apply your configurations.
 
 ---
 
@@ -187,7 +187,7 @@ If the UI loads in a new tab, the setup is complete.
                       |
                       v
 +----------------------------------------------------------+
-|        Reference FAP Flow – Aviation Federation Portal           |
+|             Aviation Federation Portal                   |
 |----------------------------------------------------------|
 | Step 1: Verify Certificates                              |
 | Step 2: Create Decentralized Identifier (DID)            |
@@ -311,7 +311,7 @@ If the UI loads in a new tab, the setup is complete.
 
 | Category | Description |
 |-----------|-------------|
-| **Project** | Reference FAP – Aviation Federation Portal |
+| **Project** | Aviation Federation Portal |
 | **Platform** | ORCE (Orchestration Engine) |
 | **Implementation** | Flow-based application (6-step orchestration) |
 | **Domain** | Federated Ecosystem Onboarding |
