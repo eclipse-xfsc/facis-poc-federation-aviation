@@ -102,7 +102,7 @@
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
-        "template": "Welcome to the FACIS FAP1 Aviation Federation Portal Portal",
+        "template": "Welcome to the Aviation Federation Portal",
         "output": "str",
         "x": 1457.5,
         "y": 260,
